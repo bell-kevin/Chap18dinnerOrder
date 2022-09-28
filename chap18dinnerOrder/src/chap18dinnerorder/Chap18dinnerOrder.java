@@ -43,7 +43,7 @@ public class Chap18dinnerOrder extends JFrame {
     private void createContents() {  // Create components and add them to window 
         Listener listener = new Listener();
         result = new JLabel();
-        frame.setSize(200, 300);
+        frame.setSize(200, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.add(prompt);
@@ -65,13 +65,9 @@ public class Chap18dinnerOrder extends JFrame {
     private class Listener implements ActionListener {//InnerClass eventHandling
 
         public void actionPerformed(ActionEvent e) {
-            try {
-                if (e.getSource() == button) {
-                    Container contentPane = getContentPane();
-                } // end if condition
-            } catch (NumberFormatException nfe) {
-                //guess = -1;
-            } // end try/catch   
+            totalCostLabel.setText("");
+            
+            totalCostLabel.setText("Total: $");
         } // end actionPerformed
     } // end Listener class
 //******************************************************************************
