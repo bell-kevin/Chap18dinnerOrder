@@ -65,8 +65,10 @@ public class Chap18dinnerOrder extends JFrame {
     private class Listener implements ActionListener {//InnerClass eventHandling
 
         public void actionPerformed(ActionEvent e) {
+            NumberFormat money = NumberFormat.getCurrencyInstance();
             totalCostLabel.setText("");
             double ps = 0, n = 0, bw = 0, c = 0, p = 0, fnc = 0, b = 0, ap = 0, ic = 0, total;
+            String formattedTotal;
             if (appetizer.getSelectedItem().equals("potato skins")) {
                 ps = 3.50;
             }
@@ -95,7 +97,8 @@ public class Chap18dinnerOrder extends JFrame {
                 ic = 2.50;
             }
             total = ps + n + bw + c + p + fnc + b + ap + ic;
-            totalCostLabel.setText("Total: $" + total);
+            formattedTotal = money.format(total);
+            totalCostLabel.setText("Total: " + formattedTotal);
         } // end actionPerformed
     } // end Listener class
 //******************************************************************************
