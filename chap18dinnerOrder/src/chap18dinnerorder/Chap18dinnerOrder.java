@@ -66,8 +66,36 @@ public class Chap18dinnerOrder extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
             totalCostLabel.setText("");
-            
-            totalCostLabel.setText("Total: $");
+            double ps = 0, n = 0, bw = 0, c = 0, p = 0, fnc = 0, b = 0, ap = 0, ic = 0, total;
+            if (appetizer.getSelectedItem().equals("potato skins")) {
+                ps = 3.50;
+            }
+            if (appetizer.getSelectedItem().equals("nachos")) {
+                n = 1.75;
+            }
+            if (appetizer.getSelectedItem().equals("buffalo wings")) {
+                bw = 4.50;
+            }
+            if (mainDish.getSelectedItem().equals("cheeseburger")) {
+                c = 3.25;
+            }
+            if (mainDish.getSelectedItem().equals("pasta")) {
+                p = 7.00;
+            }
+            if (mainDish.getSelectedItem().equals("fish and chips")) {
+                fnc = 6.25;
+            }
+            if (dessert.getSelectedItem().equals("brownie")) {
+                b = 4.00;
+            }
+            if (dessert.getSelectedItem().equals("apple pie")) {
+                ap = 5.50;
+            }
+            if (dessert.getSelectedItem().equals("ice cream")) {
+                ic = 2.50;
+            }
+            total = ps + n + bw + c + p + fnc + b + ap + ic;
+            totalCostLabel.setText("Total: $" + total);
         } // end actionPerformed
     } // end Listener class
 //******************************************************************************
