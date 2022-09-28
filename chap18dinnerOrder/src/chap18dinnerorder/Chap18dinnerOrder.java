@@ -14,7 +14,7 @@ import java.util.*;
 import javax.swing.border.*;
 
 public class Chap18dinnerOrder extends JFrame {
-
+JFrame frame = new JFrame("Dinner Order");
     private static final int WIDTH = 250;
     private static final int HEIGHT = 325;
     private JComboBox appetizer;
@@ -26,12 +26,13 @@ public class Chap18dinnerOrder extends JFrame {
     private JButton button = new JButton("Submit");
     private JLabel result;
     JLabel prompt = new JLabel("Welcome to My Diner");
+     
 //******************************************************************************
 
     public Chap18dinnerOrder() {
         setTitle("Dinner Order");
         setSize(WIDTH, HEIGHT);
-        JFrame frame = new JFrame("Dinner Order");
+       
         setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         createContents();
