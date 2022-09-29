@@ -3,19 +3,23 @@ In this project, you will use combo boxes to show the options for a dinner order
 
 Here is a sample session. The left image is the launch of the program, the right image is after pressing the button. Note the total cost is in correct currency format, dollar sign with 2 decimal places.
 
-Ch 18 Dinner
+![before](https://github.com/bell-kevin/Chap18dinnerOrder/blob/main/before.PNG)
 
 There are 3 options for each of the combo boxes:
 
-Ch 18 Dinner table
+![after](https://github.com/bell-kevin/Chap18dinnerOrder/blob/main/after.PNG)
 
 It is suggested that you use Box Layout for the JFrame, and embed layout managers in JPanels for the different portions of the screen. Be sure to include EmptyBorders to move the text away from the left edges of the window.
 
+![after2](https://github.com/bell-kevin/Chap18dinnerOrder/blob/main/after2.PNG)
+
 In an Excel spreadsheet, create at least 3 test cases BEFORE you run the program for the first time. Determine what the cost will be for 3 different combinations of meal items. Then run the program and check that you got the correct results.
+
+![after](https://github.com/bell-kevin/Chap18dinnerOrder/blob/main/after3.PNG)
 
 Take screenshots of the 3 executions of the program that match your test cases.
 
- 
+ ![after4](https://github.com/bell-kevin/Chap18dinnerOrder/blob/main/after4.PNG)
 
 Submission: the Excel spreadsheet with test cases, the specified screenshots and the root folder for the project
 
